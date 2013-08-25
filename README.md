@@ -10,7 +10,7 @@ android device connected
 python 2.?  
 
 ###Notes:
-This utility can be pretty slow with special keys as they are sent through adb and processed one at a time due to a limitation in "adb shell input keyevnt".  Normal keys can be queued up and and sent in batches (strings!).
+This utility can be pretty slow with special keys as they are sent through adb and processed one at a time due to a limitation in "adb shell input keyevent".  Normal keys can be queued up and and sent in batches (strings!).
 It is generally faster to do normal navigation with the touchpad on Glass and then normal key entry through SendKeys.
 
 ###Testing:
