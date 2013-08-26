@@ -102,20 +102,29 @@ andKeys = enum(
     KEYCODE_DPAD_LEFT = 21,
     KEYCODE_DPAD_RIGHT = 22,
     KEYCODE_CAMERA = 27,
+    KEYCODE_TAB = 61,
     KEYCODE_ENTER = 66,
+    KEYCODE_DEL = 67,
     KEYCODE_ESCAPE = 111
 )
 
-
+unmappedCursesKeys = enum(
+    KEY_BACK = 27,
+    KEY_TAB = 9,
+    KEY_ENTER = 10
+)
+    
 cursesAndroidMap = {
                     curses.KEY_HOME:andKeys.KEYCODE_HOME,
-                    27:andKeys.KEYCODE_BACK,
+                    unmappedCursesKeys.KEY_BACK:andKeys.KEYCODE_BACK,
                     curses.KEY_UP:andKeys.KEYCODE_DPAD_UP,
                     curses.KEY_DOWN:andKeys.KEYCODE_DPAD_DOWN,
                     curses.KEY_LEFT:andKeys.KEYCODE_DPAD_LEFT,
                     curses.KEY_RIGHT:andKeys.KEYCODE_DPAD_RIGHT,
                     curses.KEY_IC:andKeys.KEYCODE_CAMERA,
-                    10:andKeys.KEYCODE_ENTER
+                    unmappedCursesKeys.KEY_TAB:andKeys.KEYCODE_TAB,
+                    unmappedCursesKeys.KEY_ENTER:andKeys.KEYCODE_ENTER,
+                    curses.KEY_BACKSPACE:andKeys.KEYCODE_DEL
                     }
 
 def cursesToAndroid(c):
