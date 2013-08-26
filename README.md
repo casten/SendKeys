@@ -1,19 +1,23 @@
 SendKeys
 ========
 
-###Description:
-A utility for sending keystrokes to a USB attached Android device.  
+###Description
+SendKeys is a utility for sending keyboard input from a terminal to a USB attached Android device.  It communicates via adb and is written in python.  
 
-###Requirements:
-adb available and pathed in  
-android device connected  
-python 2.?  
+###Requirements
+* adb available and pathed in  
+* android device connected and available 
+* python 2.7 
 
-###Notes:
-This utility can be pretty slow with special keys as they are sent through adb and processed one at a time due to a limitation in "adb shell input keyevent".  Normal keys can be queued up and and sent in batches (strings!).
-It is generally faster to do normal navigation with the touchpad on Glass and then normal key entry through SendKeys.
+###Usage
 
-###Testing:
-So far only tested with Python 2.7.3  
-Only tested with Google Glass so far  
-Only tested on Ubuntu 12.04.  Who knows how well it will work on Windows or OSX.
+	python SendKeys.py
+
+###Notes
+This utility may be slow with multiple special keys as they are sent through adb and processed one at.  Normal keys may be queued up and and sent in batches.
+It is generally faster to navigate with the touchpad on Glass and use SendKeys for other data entry.
+
+###Testing
+* Tested with Python 2.7.3 but other versions may work as well 
+* Tested with Google Glass, but others devices should work as well.  
+* Tested on Ubuntu 12.04.  Windows and OSX compatibility unknown.
