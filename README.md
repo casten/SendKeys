@@ -19,5 +19,5 @@ It is generally faster to navigate with the touchpad on Glass and use SendKeys f
 
 ###Testing
 * Tested with Python 2.7.3 but other versions may work as well 
-* Tested with Google Glass, but others devices should work as well.  
+* Tested with stock Google Glass, SGH-i747 with 4.1 and CM 10.2.  
 * Tested on Ubuntu 12.04.  Windows and OSX compatibility unknown.
