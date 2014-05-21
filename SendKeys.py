@@ -105,13 +105,15 @@ andKeys = enum(
     KEYCODE_TAB = 61,
     KEYCODE_ENTER = 66,
     KEYCODE_DEL = 67,
-    KEYCODE_ESCAPE = 111
+    KEYCODE_ESCAPE = 111,
+    KEYCODE_SPACE = 62
 )
 
 unmappedCursesKeys = enum(
     KEY_BACK = 27,
     KEY_TAB = 9,
-    KEY_ENTER = 10
+    KEY_ENTER = 10,
+    KEY_SPACE = 32
 )
     
 cursesAndroidMap = {
@@ -124,6 +126,7 @@ cursesAndroidMap = {
                     curses.KEY_IC:andKeys.KEYCODE_CAMERA,
                     unmappedCursesKeys.KEY_TAB:andKeys.KEYCODE_TAB,
                     unmappedCursesKeys.KEY_ENTER:andKeys.KEYCODE_ENTER,
+                    unmappedCursesKeys.KEY_SPACE:andKeys.KEYCODE_SPACE,
                     curses.KEY_BACKSPACE:andKeys.KEYCODE_DEL
                     }
 
